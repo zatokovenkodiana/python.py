@@ -3,6 +3,7 @@ print("Python")
 print() # это пустая строка
 
 
+
 print('В тексте есть "двойные" кавычки')
 print("В тексте есть 'одинарные' кавычки")
 выводит:
@@ -10,26 +11,32 @@ print("В тексте есть 'одинарные' кавычки")
 В тексте есть 'одинарные' кавычки
 
 
+
 print("I'm", 'the', "BAD", 'guy')
 выводит:
 I'm the BAD guy
+
 
 
 city = 'Владивосток'
 print(city, '- мой город!')
 
 
+
 print('Как тебя зовут?')     # вывод текста
 print('Привет,', input())    # ввод текста и вывод текста
+
 
 
 variable_name = input()
 print('Вы ввели текст:', variable_name)    # но можно и типо так print('Вы ввели текст:', input())
 
 
+
 first = input()
 second = input()
 print('I am', first, 'and', second)
+
 
 
 print('aa', 'bb', 'cc', sep='*')
@@ -49,3 +56,11 @@ print('second line')
 выводит:
 a b c-second line
 По завершении печати первой команды print() вставлен символ - вместо символа перевода строки \n.
+
+
+
+print('a', '\n', 'b', '\n', 'c', sep='*', end='#')
+выводит:
+a*
+*b*
+*c#
