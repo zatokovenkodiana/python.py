@@ -40,3 +40,12 @@ minus = '-'
 print('aa', 'bb', 'cc', sep=minus)
 выводит:
 aa-bb-cc
+
+
+
+minus = '-'
+print('a', 'b', 'c', end=minus)
+print('second line')
+выводит:
+a b c-second line
+По завершении печати первой команды print() вставлен символ - вместо символа перевода строки \n.
