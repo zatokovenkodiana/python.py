@@ -38,3 +38,5 @@ aa*bb*cc
 
 minus = '-'
 print('aa', 'bb', 'cc', sep=minus)
+выводит:
+aa-bb-cc
