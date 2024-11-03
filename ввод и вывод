@@ -30,3 +30,8 @@ print('Вы ввели текст:', variable_name)    # но можно и ти
 first = input()
 second = input()
 print('I am', first, 'and', second)
+
+
+print('aa', 'bb', 'cc', sep='*')
+выводит:
+aa*bb*cc
