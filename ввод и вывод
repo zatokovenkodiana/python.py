@@ -9,16 +9,24 @@ print("В тексте есть 'одинарные' кавычки")
 В тексте есть "двойные" кавычки
 В тексте есть 'одинарные' кавычки
 
+
 print("I'm", 'the', "BAD", 'guy')
 выводит:
 I'm the BAD guy
 
+
 city = 'Владивосток'
 print(city, '- мой город!')
+
 
 print('Как тебя зовут?')     # вывод текста
 print('Привет,', input())    # ввод текста и вывод текста
 
+
 variable_name = input()
 print('Вы ввели текст:', variable_name)    # но можно и типо так print('Вы ввели текст:', input())
 
+
+first = input()
+second = input()
+print('I am', first, 'and', second)
