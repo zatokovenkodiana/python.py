@@ -35,3 +35,6 @@ print('I am', first, 'and', second)
 print('aa', 'bb', 'cc', sep='*')
 выводит:
 aa*bb*cc
+
+minus = '-'
+print('aa', 'bb', 'cc', sep=minus)
