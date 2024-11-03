@@ -76,3 +76,9 @@ print(arg1, 'everyone', sep=sep1, end='! ')
 print('How', 'are', 'you', 'in', '2024?', sep=' ', end=end2)
 выводит:
 Hello_-_everyone! How are you in 2024?+++
+
+Чтобы убрать все дополнительные выводимые символы, можно установить параметры sep и end команды print() как пустые строки ('')
+print('a', 'b', 'c', sep='', end='')
+print('d', 'e', 'f', sep='', end='')
+выводит:
+abcdef
