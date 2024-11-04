@@ -91,3 +91,6 @@ print('Python', end='\n\n\n')
 можно задавать значения сразу нескольким переменным
 name, surname = 'Timur', 'Guev'
 print('Имя:', name, 'Фамилия:', surname)
+
+name, surname = input(), input()
+print('Имя:', name, 'Фамилия:', surname)
