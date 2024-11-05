@@ -94,3 +94,13 @@ print('Имя:', name, 'Фамилия:', surname)
 
 name, surname = input(), input()
 print('Имя:', name, 'Фамилия:', surname)
+
+
+нужно добавлять int если нужно работать с целыми числами, а не с текстом
+num1 = int(input())
+num2 = int(input())
+print(num1 + num2)
+
+
+перенос на другую строчку каждого числа
+print(num2, num3, sep='\n')
