@@ -103,4 +103,4 @@ print(num1 + num2)
 
 
 перенос на другую строчку каждого числа
-print(num2, num3, sep='\n')
+print(num1, num2, num3, sep='\n')
