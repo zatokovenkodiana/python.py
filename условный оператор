@@ -40,3 +40,15 @@ if num2 % 2 == 0:
 if num3 % 2 == 0:
     counter = counter + 1  # увеличиваем счётчик на 1
 print(counter)
+
+
+
+
+
+Задача. Напишите программу, которая определяет наименьшее из двух чисел.
+a = int(input())
+b = int(input())
+if a < b:
+    print(a)
+else:
+    print(b)
