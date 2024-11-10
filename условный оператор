@@ -98,3 +98,7 @@ if age >= 7 and age <= 9:
 Правильно:
 if my_city == 'Сидней' or my_city == 'Аделаида' or my_city == 'Перт':
    print('Я живу в Австралии')
+
+
+
+print('Принадлежит' if -1 < int(input()) < 17 else 'Не принадлежит')
