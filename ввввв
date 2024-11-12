@@ -1,0 +1,56 @@
+import random
+import sys
+Gaming = True
+print("Добро пожаловать в числовую угадайку!")
+print("Введите максимальное число для игры (от 1 до ... )")
+limit = input()
+if limit == "1":
+    print("Введите целое натуральное число в диапазоне от 2 до бесконечности:")
+    limit = input()
+# Функция "От дурака"
+def is_valid(x):
+    return x.isdigit() == True and limit.isdigit() == True and 1 <= int(x) <= int(limit)
+print("Хорошо! Теперь попробуйте угадать какое число я загадал от 1 до", " ", limit, ", введите:", sep="")
+# Игра
+def game():
+    n = random.randint(1, int(limit))
+    count = 1
+    while True:
+        x = input()
+        if is_valid(x) == False:
+            print('А может быть все-таки введем целое положительное число от 2 до ...?')
+        else:
+            x = int(x)
+            if x < n:
+                print("Неверно! Ваше число меньше загаданного,", "попробуйте еще разок: ")
+                print("(", count, " ", "неудача", ")", sep="")
+                count += 1
+            elif x > n:
+                print("Неверно! Ваше число больше загаданного,", "попробуйте еще разок: ")
+                print("(", count, " ", "неудача", ")", sep="")
+                count += 1
+            elif x == n:
+                print("Вы угадали c", count, "попытки, поздравляю!")
+                replace()
+# Повтор игры
+def replace():
+    print("Хотите сыграть еще разок? (Да/Нет)")
+    answer = input()
+    while True:
+        if answer.lower() == "да" or answer.lower() == "yes" or answer.lower() == "lf":
+            print("Отлично! рад что Вам понравилось! ")
+            print("Введите максимальное число для игры (от 1 до ... )")
+            global limit
+            limit = input()
+            print("Хорошо! Теперь попробуйте угадать какое число я загадал от 1 до", " ", limit, ", введите:", sep="")
+            game()
+            break
+        else:
+            print("Спасибо за игру! Еще увидимся...")
+            global Gaming
+            Gaming = False
+            sys.exit(0)
+# Вызов функций
+if Gaming == True:
+    game()
+    replace()
