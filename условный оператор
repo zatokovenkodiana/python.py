@@ -159,3 +159,17 @@ elif grade >= 60:
     print(2)
 else:
     print(1)
+
+
+
+
+Заключительный блок else в операторе if-elif-else является необязательным:
+
+traffic_light_signal = input('Введите сигнал светофора: ')
+
+if traffic_light_signal == 'красный':
+    print('Стой!')
+elif traffic_light_signal == 'желтый':
+    print('Приготовься...')
+elif traffic_light_signal == 'зеленый':
+    print('Иди!')
